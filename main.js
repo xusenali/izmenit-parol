@@ -9,6 +9,7 @@ const newData = document.querySelector(".newpass");
 const exit = document.querySelector(".exit");
 const newexit = document.querySelector(".exitt");
 const changeinput = document.querySelector(".inputchange");
+const inputpass = document.querySelector(".inputpass");
 const newInpit = document.querySelector(".inputnew");
 
 const user = {
@@ -43,6 +44,7 @@ function handleChangePasswordClick() {
         changeData.style.display = "none";
         newData.style.display = "flex";
         changeinput.style.border = "transparent";
+        changeinput.value = "";
     } else {
         changeinput.style.border = "1px solid red";
     }
@@ -54,13 +56,18 @@ function handleSaveNewPasswordClick() {
     changeData.style.display = "none";
     newData.style.display = "none";
     formdata.style.display = "flex";
+    passBtn.style.display = "block";
+    newInpit.value = "";
+    inputpass.value = "";
     console.log("Yangi parol saqlandi:", user.password);
+    alert("Yangi parol saqlandi!");
 }
 
 
 function handlePassBtnClick() {
     formdata.style.display = "none";
     changeData.style.display = "flex";
+    passBtn.style.display = "none";
 }
 
 

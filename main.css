@@ -55,7 +55,10 @@
 .container .labelpass{
   top: 50.05%;
 }
-
+.btn{
+  position: absolute;
+  top: 70%;
+}
 .input {
   margin-bottom: 30px;
   width: 200px;
